@@ -1,0 +1,10 @@
+1. First unlock the bootloader from settings and unlock oem bootloader
+2. Then flash TWRP using fastboot and then reboot to TWRP.
+	adb reboot bootloader
+	fastboot flash recovery <twrp file name on pc>.img
+	reboot to TWRP by pressing power and volume up buttons at once
+3. Then flash Magisk
+	Download Magisk latest version for Lenovo Vibe K5 Plus and store it in the SD Card of the Phone.
+	adb reboot recovery {from pc}
+	click install then locate the Magisk File and confirm execute flashing
+4. Then install a custom rom from TWRP. 
