@@ -1,0 +1,29 @@
+1. Unlock the bootloader
+    Need Windows for this. Install in a VM.
+    Download Unofficial Tool from here(https://drive.google.com/uc?id=1asdnMGwr5aJRcMoe2Ww1fBUTjOqdbAIh&export=download) and install it.
+    Reboot to fastboot mode in Redmi Phone.
+    Connect your device to PC. Select on your particular device from Virtualbox Device > USB menu
+    run the tool downloaded, sign in with your MI Account
+    Click on Unlock and your device will be unlocked
+    Reboot to system. It will take a lot of time, be patient
+2. Standard steps
+    adb reboot bootloader
+    fastboot flash <TWRP image name>.img
+    fastboot boot recovery <TWRP image name>.img
+3. Disconnect phone from PC
+    from TWRP menu go to Wipe and then wipe everything.
+    then format your storage. This step removes old MIUI encryption.
+    Without this step stuff might not work properly later on.
+4. Install Magisk zip
+    Download zip on PC. Connect your phone in recovery mode.
+    If Linux PC doesn't recognise, make sure gvfs-mtp is installed.
+    Move Magisk ZIP to internal storage.
+    Then from TWRP menu select install and install Magisk.
+5. Install LineageOS
+    Download LineageOS latest version compatible with phone.
+    Transfer ZIP to internal storage of phone
+    Install from TWRP menu and reboot to system
+6. Install GApps(optional)
+    After making sure LineageOS works properly, reboot to recovery
+    Download corresponding OpenGApps version, pay attention to Android version of LineageOS. Transfer it to internal storage
+    Install from TWRP menu and reboot to system.
