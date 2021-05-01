@@ -53,9 +53,9 @@ If your device is recognised, go ahead. If not google with the code name for you
 
 Change directory to where you have downloaded the [Custom Recovery](#1-custom-recovery)
 
-> fastboot flash recovery {exact name of the recovery file}.img
+> fastboot flash recovery (exact name of the recovery file).img
 
-> fastboot boot recovery {exact name of the recovery file}.img
+> fastboot boot recovery (exact name of the recovery file).img
  
 # 6. Flashing Magisk if you do not want to remove stock ROM which is provided with phone. Skip this step for now if you want to install Custom ROM.
 After the last step shown above, you should now be in TWRP/OrangeFOx recovery. Connect your phone to your laptop now.
