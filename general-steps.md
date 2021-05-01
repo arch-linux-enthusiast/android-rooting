@@ -1,5 +1,5 @@
 ## Welcome to the noobs guide to android rooting!!
-In this page you will find the overview of android rooting. Though it changes from phone to phone, some steps remain the same.
+In this page you will find the overview of android rooting. Though the steps change from phone to phone, some steps remain the same.
 
 # 1. Unlocking the bootloader
 
@@ -29,11 +29,11 @@ In this page you will find the overview of android rooting. Though it changes fr
 
 # 4. Tools necessary in your android device
 These tools are to be downloaded on your PC and later transferred when necessary to your phone.
-1. Custom Recovery
+### 1. Custom Recovery
     1. [TWRP](https://twrp.me/Devices) The exact link will vary from device to device, check if your device is available in the list
     2. [Orange Fox Recovery](https://orangefox.download/) Choose this if TWRP does not work, this is an alternative only. **You only need** *one* **of these two recoveries not both.**
-2. [Magisk](https://magisk.me/zip/)
-3. custom ROM (optional)
+### 2. [Magisk](https://magisk.me/zip/)
+### 3. custom ROM (optional)
 
 # 5. Flashing TWRP and booting into TWRP
 Commands in quote blocks are to be run in the terminal.
@@ -48,7 +48,7 @@ Check if fastboot recognisese your device. This needs to be run with elevated pr
 
 If your device is recognised, go ahead. If not google with the code name for your device.
 
-Change directory to where you have downloaded the [Custom Recovery](1-custom-recovery)
+Change directory to where you have downloaded the [Custom Recovery](#1-custom-recovery)
 
 > fastboot flash recovery <exact name of the recovery file>.img
 
