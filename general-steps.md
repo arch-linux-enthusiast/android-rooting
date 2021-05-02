@@ -1,5 +1,9 @@
+# The noobs guide to android rooting
+
 ## Welcome to the noobs guide to android rooting!!
-In this page you will find the overview of android rooting. Though the steps change from phone to phone, some steps remain the same.
+In this page you will find the overview of android rooting. Though the steps change from phone to phone, some steps remain the same. It is important that you know the code name of your device not just the model name. eg: code name of Redmi 4X is santoni; code name of Lenovo Vible K5 Plus 3 GB RAM is a6020a46.
+
+This is of utmost importance as often in android phones, drivers for hardware vary across different makes. Within the same model of phone there may be a make with different camera/CPU etc. which will be problematic later on. To find the exact model name, open up your settings and the "About phone" section. Check under "Device Name" The exact code name should be present there.
 
 # 1. Unlocking the bootloader
 
@@ -23,7 +27,7 @@ In this page you will find the overview of android rooting. Though the steps cha
 
 # 3. Making your android device trust your PC's RSA fingerprint
 1. Connect your android device to your phone with a data cable, set the USB option in your phone to "file transfer" or "MTP" and then run "adb devices" in your PC from the command line (henceforth referred to as the terminal). This will work if you have installed the previous tools system-wide. If you have only downloaded them, see the next step.
-2. If you get some error then move into the directory where the tools are downloaded and run "./adb devices". In Windows you might have to run ".\adb devices". Notice the difference which is subtle, in Windows you need to run it with a backslash (\).
+2. If you get some error then move into the directory where the tools are downloaded and run "./adb devices". In Windows you might have to run ".\adb devices". Notice the difference which is subtle, in Windows you need to run it with a backslash ("\").
 3. Your phone should give a message about trusting RSA fingerprint of device. Select the "Always allow from this computer" and select OK. Your device should show up in the terminal window.
 4. Note that this step is extremely crucial. Without your phone trusting the RSA fingerprint of your PC, you cannot root. Do not skip thinking it is a "testing" step of some kind.
 
