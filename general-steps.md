@@ -74,7 +74,7 @@ Now disconnect your phone from PC and install the Magisk ZIP by selecting Instal
 
 Then you should Wipe Cache/Dalvik before rebooting into your system. The first time you do reboot might take some time.
 
-## 6.1 Flashin Magisk like a man
+## 6.1 Flashing Magisk like a man
 I had problems when doing the method described above and magisk just wouldn't load in my phone. So I read the manual and [here is the real way to do it](https://topjohnwu.github.io/Magisk/install.html).
 
 The first method will basically never fail to work. here is how you get the boot.img file that is talked about.
