@@ -39,7 +39,7 @@ These tools are to be downloaded on your PC and later transferred when necessary
   2. [Orange Fox Recovery](https://orangefox.download/) Choose this if TWRP does not work, this is an alternative only. **You only need** *one* **of these two recoveries not both.**
  
 
-### 2. [Magisk](https://magisk.me/zip/)
+### 2. [Magisk](https://github.com/topjohnwu/Magisk/releases/tag/v23.0)
 ### 3. custom ROM (optional)
 
 # 5. Flashing TWRP and booting into TWRP
@@ -68,9 +68,30 @@ Both the recoveries start MTP on being booted into so your PC should pick them u
 
 However I was having trouble browsing in Arch Linux because my file manager wasn't able to detect the MTP devices. I solved this problem by installing gvfs-mtp package which took care of the problem completely
 
-Now you should move into the directory where you downloaded the Magisk ZIP on your PC and copy the file over to your phone, preferably in the home directory so that it is easy to find when installing it.
+Now you should move into the directory where you downloaded the Magisk APK, rename the extension to ZIP (.zip) on your PC and copy the file over to your phone, preferably in the home directory so that it is easy to find when installing it.
 
-Now disconnect your phone from PC and install the Magisk ZIP by selecting Install. It is quite easy and you can figure out the exact steps by yourself since it is all a pretty GUI anyway.
+Now disconnect your phone from PC and install the Magisk ZIP by selecting Install from TWRP main menu and selecting the magisk zip file.
 
 Then you should Wipe Cache/Dalvik before rebooting into your system. The first time you do reboot might take some time.
 
+## 6.1 Flashin Magisk like a man
+I had problems when doing the method described above and magisk just wouldn't load in my phone. So I read the manual and [here is the real way to do it](https://topjohnwu.github.io/Magisk/install.html).
+
+The first method will basically never fail to work. here is how you get the boot.img file that is talked about.
+
+You will need to uncompress the ZIP file of the cstom ROM you have downloaded and find the boot.img file which is generally located under the "images" folder. If you are on stock ROM, download the stock firmware of your device, uncompress it and find the boot.img file.
+
+
+# 7. Flashing a custom ROM
+After step 5, you should be in TWRP/OrangeFox recovery.
+
+What you want to do is to wipe all data on your phone and format it too. Then reboot to recovery again. DO not ever run "rm -rf" on / and instead use the GUI provided by TWRP.
+
+Now connect your device to your laptop and MTP should be enabled meaning you can transfer files between laptop and computer. Transfer over the Custom ROM's ZIP file. When it completes, disconnect your phone and select install in TWRP. You should be able to locate the ZIP file of the custom ROM. Select it and swipe to flash. 
+
+### Debugging: After it completes look for any error codes if present on the screen, typically these show up in red. Take note of the error code and search online for help, usually every error code has a simple solution. Search along the lines of:
+>{Phone model name} {custom ROM name} {error code}
+
+Flashing Magisk is required for root access and steps are the same as above. Magisk is to be flashed AFTER flashing the custom ROM.
+
+# 8. Congratulations you now have a rooted phone either with a custom ROM or without a custom ROM which is still rooted.
